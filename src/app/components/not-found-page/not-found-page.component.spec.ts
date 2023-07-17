@@ -6,10 +6,12 @@ describe('NotFoundPageComponent', () => {
   let component: NotFoundPageComponent;
   let fixture: ComponentFixture<NotFoundPageComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [NotFoundPageComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ NotFoundPageComponent ]
+    })
+    .compileComponents();
+
     fixture = TestBed.createComponent(NotFoundPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
